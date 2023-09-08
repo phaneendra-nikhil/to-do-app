@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://files.123freevectors.com/wp-content/original/131249-dark-grey-low-poly-abstract-background-design-vector.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    overflow: hidden;
+}
+h1{
+    margin-top: 3%;
+    text-align: center;
+}
+.todo-wrapper{
+    background-color: rgb(58, 65, 65);
+    padding: 2%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0px 5px 7px rgb(29, 28, 28);
+}
+
+.todo-input{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-bottom: 1px solid gray;
+ padding-bottom: 25px;
+ margin-bottom: 25px;
+}
+
+.todo-input-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 25px;
+}
+
+.todo-input-item label{
+    font-size: large;
+    font-family: cursive;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.todo-input-item input{
+    padding: 10px;
+    border: none;
+    width: 250px;
+
+}
+.todo-input-item input:focus{
+    
+    
+    outline: none;
+    outline: 2px solid rgb(14, 14, 15);
+    
+}
+.primaryBtn{
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(97, 97, 100);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    margin-top: 35px;
+    padding: 10px ;
+    width: 60px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.primaryBtn:hover{
+    background-color: rgb(47, 47, 49);
+    transition: 0.5s ease;
+}
+.secondarybtn{
+    background-color: rgb(40, 39, 39);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    margin-top: 25px;
+    padding: 10px;
+    width: fit-content;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.active{
+    font-weight: 600;
+    background-color: rgb(252, 251, 255);
+    color: black;
+    transform: scale(1.075);
+    transition: 0.5s ease;
+}
+.btn-area{
+    margin-bottom: 25px;
+}
+.todo-list{
+    display: flex;
+    flex-direction: column;
+}
+.todo-list-item{
+    background-color: rgb(41, 46, 46);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+.todo-list-item h3{
+    
+    font-size: 30px;
+    color: rgb(98, 114, 239);
+    font-weight: bold;
+    margin: 0;
+}
+
+.todo-list-item p{
+font-size: 14px;
+color: white;
+margin-top: 8px;
+}
+.delete-icon{
+    font-size: 35px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.delete-icon:hover{
+    color: red;
+    transform: scale(1.075);
+    transition: 0.5s ease;
+}
+.check-icon{
+    font-size: 35px;
+    margin-left: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.check-icon:hover{
+    transform: scale(1.075);
+    color: lime;
+    transition: 0.5s ease;
+}
